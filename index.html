@@ -21,25 +21,8 @@
     </header>
     <main>
         <!--inicio-->
-        <section class="index d-flex justify-content-center align-items-center">
-            <div class="container d-flex justify-content-center align-items-center">
-                <div>
-                    <h1 class="title">
-                        Rompe tus límites
-                    </h1>
-                    <h2 class="subtitle text-white mt-3">
-                        Suela con tecnología de amortiguación activa y materiales transpirables
-                    </h2>
-                    <button class="btn-index px-3 py-1 mt-5">
-                        Comprar ahora
-                    </button>
-                </div>
-                <div>
-                    <img class="image-index"
-                        src="https://i.pinimg.com/736x/36/a0/b5/36a0b55353c8a13d73c1cb0a6a111498.jpg"
-                        alt="imagen tenis">
-                </div>
-            </div>
+        <section>
+            <h2></h2>
         </section>
 
         <!--Productos-->
@@ -125,15 +108,67 @@
 
 
         <!--Contacto-->
-        <section>
+        <section id="sectionContacto">
+            <h2 id="contactoh2">Contacto</h2>
+            <div class="containerContacto">
+                <form class="FormularioContacto">
+                    <div class="inputEmail">
+                        <label for="correo" class="form-label" id="correo">Correo electronico </label>
+                        <input type="text" id="correoinput" name="Correo electronico" required
+                            placeholder="example@gmail.com">
+                    </div>
 
-
+                    <div class="inputTelefono">
+                        <label for="telefono" class="form-label" id="telefono">Télefono</label>
+                        <input type="text" id="telefonoinput" name="telefono" required placeholder="55-55-55-55-55">
+                    </div>
+                    <div class="comentario">
+                        <label for="exampleFormControlTextarea1" id="comentariolabel">Comentarios</label>
+                        <textarea id="comentarios"></textarea>
+                    </div>
+                    <button onclick="alternarAlerta()" id="enviar">Enviar</button>
+                </form>
+             
+            </div>
         </section>
     </main>
 
     <!--Footer-->
     <footer>
+        <div class="footer">
+            <div class="footerIzquierda">
+                <h3>Autores</h3>
+                <ul id="autores">
+                    <li>Victor Gómez</li>
+                    <li>Misael Vivian</li>
+                    <li>Iris Lora</li>
+                    <li>Roble Luna</li>
+                    <li>Axel Garcia</li>
+                </ul>
+            </div>
 
+            <div class="contacto">
+                <h3>Contacto</h3>
+                <a href="mailto:hackashoes@gmail.com">
+                    hackashoes@gmail.com
+                </a>
+                <div id="containerImagenes">
+                    <a id="aFace" href="https://www.facebook.com/"><img id="facebook"
+                            src="https://img.icons8.com/ios7/1200/facebook-new.jpg">facebook</a>
+                    <a id="aWhats" href="https://web.whatsapp.com/"><img id="whatsapp"
+                            src="https://i.pinimg.com/1200x/44/e9/9e/44e99ef2c222ab3433157db77eafe244.jpg">whatsapp</a>
+                </div>
+
+            </div>
+
+
+
+            <div class="footerDerecha">
+                <h3>Proyecto Hackaton</h3>
+                <p>Hackashoes</p>
+                <p>&copy; 2026 Hackaton|Hackashoes. Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
 
     <!--Script funcionalidad extra -->
