@@ -6,6 +6,58 @@
 .color5{color:#002B5B;}
 */
 
+
+/* Seccion Axeel*/
+
+/* NAVBAR color*/
+
+.navbar-hakashoes {
+    background-color: #2D4059;
+    padding: 15px 0;
+}
+/* color de la seccion de */
+.navbar-hakashoes .navbar-brand {
+    color: #F9F5EB;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+/* color letras*/
+.navbar-hakashoes .nav-link {
+    color: #F9F5EB;
+    margin: 0 8px;
+}
+
+/* al pasar por esa letra cambia a*/
+.navbar-hakashoes .nav-link:hover {
+    color: #F07B3F;
+}
+/*ventana de login*/
+.btn-login {
+    background-color: #F07B3F;
+    color: #FFFFFF;
+}
+
+.btn-carrito {
+    background-color: #EA5455;
+    color: #FFFFFF;
+}
+
+.btn-login:hover,
+.btn-carrito:hover {
+    background-color: #002B5B;
+    color: #FFFFFF;
+}
+
+#contadorCarrito {
+    background-color: #F9F5EB;
+    color: #002B5B;
+}
+
+
+
+
+   
+
 /* --- SECCIÓN CONTACTO (Base para Celulares) --- */
 body{
     width: 100%;

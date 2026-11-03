@@ -17,6 +17,176 @@
 <body>
     <!--Nav Bar-->
     <header>
+ <!--Contenedor responsivo-->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-hakashoes">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#inicio">
+            HakaShoes
+        </a>
+<!--Boton del menu -->
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuHaka"
+            aria-controls="menuHaka"
+            aria-expanded="false"
+            aria-label="Abrir menú">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuHaka">
+
+            <!--Enlazar a secciones de navegacion-->
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#quienes-somos">Quiénes somos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#productos">Productos</a>
+                </li>
+
+                <li class="nav-item">
+                   <!--Oros botones -->
+                    <button class="btn btn-login ms-lg-3"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalLogin">
+                        Iniciar sesión
+                    </button>
+                </li>
+
+                <li class="nav-item ms-lg-3">
+                    <button class="btn btn-carrito"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalCarrito">
+                        Carrito
+                        <span id="contadorCarrito" class="badge">
+                            0
+                        </span>
+                    </button>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<!-- ventanita de login -->
+
+<div class="modal fade" id="modalLogin" tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content login-haka">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Bienvenido a HakaShoes
+                </h5>
+
+                <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <h6 class="text-center mb-3">
+                    Inicia sesión
+                </h6>
+
+                <form id="formLogin">
+
+                    <div class="mb-3">
+
+                        <label for="correoLogin" class="form-label">
+                            Correo electrónico
+                        </label>
+
+                        <input type="email"
+                            class="form-control"
+                            id="correoLogin"
+                            placeholder="ejemplo@correo.com"
+                            required>
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label for="passwordLogin" class="form-label">
+                            Contraseña
+                        </label>
+
+                        <input type="password"
+                            class="form-control"
+                            id="passwordLogin"
+                            placeholder="Tu contraseña"
+                            required>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-login w-100">
+                        Iniciar sesión
+                    </button>
+
+                </form>
+
+                <hr>
+
+                <button type="button"
+                    class="btn btn-outline-primary w-100"
+                    id="btnTelefono">
+                    Continuar con número telefónico
+                </button>
+
+                <div id="formTelefono" class="mt-3 d-none">
+
+                    <label for="telefonoLogin" class="form-label">
+                        Número telefónico
+                    </label>
+
+                    <input type="tel"
+                        class="form-control"
+                        id="telefonoLogin"
+                        placeholder="Tu número telefónico">
+
+                
+                    <button type="button"
+                        class="btn btn-login w-100 mt-2"
+                        id="btnContinuarTelefono">
+                        Continuar
+                    </button>
+
+                </div>
+
+                <p class="text-center mt-3 mb-0">
+                    ¿No tienes cuenta?
+                    <a href="#" id="btnRegistro">Crear cuenta</a>
+                </p>
+
+
+                <div id="mensajeLogin" class="mt-3"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
     </header>
     <main>
@@ -170,6 +340,39 @@
             </div>
         </div>
     </footer>
+<!-- CARRITO - AXEL -->
+<div class="modal fade" id="modalCarrito" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Mi carrito</h5>
+                <button type="button" class="btn-close"
+                    data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <div id="listaCarrito"></div>
+
+                <hr>
+
+                <p>Subtotal: $<span id="subtotalCarrito">0</span></p>
+                <p>Envío: $<span id="envioCarrito">199</span></p>
+                <h5>Total: $<span id="totalCarrito">199</span></h5>
+
+                <div id="mensajePromocion"></div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-danger" id="vaciarCarrito">
+                    Vaciar carrito
+                </button>
+                <button class="btn btn-secondary"
+                    data-bs-dismiss="modal">Seguir comprando</button>
+            </div>
+
+        </div>
+    </div>
 
     <!--Script funcionalidad extra -->
     <script src="script.js"></script>
