@@ -5,3 +5,185 @@
 .color4{color:#2D4059;}
 .color5{color:#002B5B;}
 */
+
+/* --- SECCIÓN CONTACTO (Base para Celulares) --- */
+body{
+    width: 100%;
+    height: 100%;
+}
+
+#sectionContacto{
+    background-color: #2D4059;
+}
+
+.containerContacto {
+    display: flex;
+    flex-direction: column;
+    /* En celular, el formulario y las imágenes van uno abajo del otro */
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    min-height: auto;
+    /* Quitamos los 500px fijos para que no aplaste el contenido */
+}
+
+#contacto {
+    display: flex;
+    justify-content: center;
+    /* Centrado en móviles */
+    gap: 20px;
+    /* Espacio grande controlado entre Facebook y WhatsApp */
+    color:antiquewhite;
+}
+
+#facebook,
+#whatsapp {
+    width: 50px;
+    height: 50px;
+}
+
+#containerImagenes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* --- DISEÑO DE FORMULARIO --- */
+
+#formularioContacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    color:white;
+    /* Evita que el formulario sea gigantesco en PC */
+}
+
+#inputCorreo {
+    order: 1;
+    color:white;
+    
+}
+
+#inputTelefono {
+    order: 2;
+    color:white;
+}
+
+#correoinput, #telefonoinput{
+    color:black
+}
+
+#comentario {
+    order: 3;
+}
+
+#comentariolabel {
+    display: block;
+    margin-bottom: 5px;
+    color:white;
+}
+
+#telefono ,#correo{
+  color:white
+}
+#comentarios {
+    width: 100%;
+    /* Se adapta al ancho del formulario */
+    max-width: 300px;
+    height: 150px;
+    color:black;
+    /* Reducido para celulares, crece en PC si es necesario */
+}
+
+#enviar {
+    background-color: #EA5455;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* --- DISEÑO PIE DE PÁGINA (Footer) --- */
+
+.footer {
+    background-color: #F07B3F;
+    border: 2px solid #000000;
+    display: flex;
+    flex-direction: column;
+    /* En celular, las secciones del footer se apilan */
+    padding: 20px;
+    gap: 20px;
+    color: white;
+}
+
+/* En celular, todos ocupan el 100% del ancho */
+.footerIzquierda,
+.contacto,
+.footerDerecha {
+    width: 100%;
+    text-align: center;
+    color: white;
+    /* Centra los textos en pantallas chicas */
+}
+
+#contactoh2 {
+    text-align: center;
+    color: white;
+}
+
+.footer h3 {
+    margin: 5px;
+    font-size: clamp(24px, 5vw, 48px);
+    /* Ajustado para mejor respuesta en móviles */
+    font-weight: normal;
+}
+
+
+/* ====================================================
+   PANTALLAS GRANDES (Computadoras y Tablets >= 768px)
+   ==================================================== */
+@media (min-width: 768px) {
+
+    .containerContacto {
+        flex-direction: row;
+        /* En PC se ponen uno al lado del otro */
+        justify-content: space-around;
+        height: 600px;
+        /* Aquí sí podemos asignar una altura cómoda */
+    }
+
+    #contacto {
+        justify-content: flex-start;
+        color: white;
+    }
+
+    #comentarios {
+        height: 300px;
+        color: black;
+        /* Recupera su tamaño grande original */
+    }
+
+    .footer {
+        flex-direction: row;
+        /* El footer se vuelve horizontal en PC */
+        justify-content: space-between;
+    }
+
+    /* Repartimos el espacio del footer equitativamente */
+    .footerIzquierda {
+        width: 33%;
+        text-align: left;
+    }
+
+    .contacto {
+        width: 34%;
+    }
+
+    .footerDerecha {
+        width: 33%;
+        text-align: right;
+    }
+}
