@@ -1,26 +1,28 @@
-/*inicio*/ 
-.index{
+/*inicio*/
+.index {
     width: 100vw;
     min-height: 90vh;
     padding: 40px 15px;
     background: linear-gradient(45deg, #2D4059 40%, #EA5455);
 }
 
-#inicioSesionbtn, #carritobtn{
-color:white
+
+#inicioSesionbtn,
+#carritobtn {
+    color: white
 }
 
-.title{
+.title {
     color: #EA5455;
     font-size: 3rem;
 }
 
-.subtitle{
+.subtitle {
     width: 70%;
     font-size: 1.7rem;
 }
 
-.btn-index{
+.btn-index {
     background: #EA5455;
     color: #F9F5EB;
     font-size: 1.3rem;
@@ -29,7 +31,7 @@ color:white
     transition: transform 0.2s ease;
 }
 
-.btn-index:hover{
+.btn-index:hover {
     background: #F9F5EB;
     border: 1px solid #EA5455;
     color: #EA5455;
@@ -127,12 +129,14 @@ color:white
     background-color: #2D4059;
     padding: 15px 0;
 }
+
 /* color de la seccion de */
 .navbar-hakashoes .navbar-brand {
     color: #F9F5EB;
     font-size: 25px;
     letter-spacing: 1px;
 }
+
 /* color letras*/
 .navbar-hakashoes .nav-link {
     color: #F9F5EB;
@@ -143,6 +147,7 @@ color:white
 .navbar-hakashoes .nav-link:hover {
     color: #F07B3F;
 }
+
 /*ventana de login*/
 .btn-login {
     background-color: #F07B3F;
@@ -168,12 +173,12 @@ color:white
 
 
 /* --- SECCIÓN CONTACTO (Base para Celulares) --- */
-body{
+body {
     width: 100%;
     height: 100%;
 }
 
-#sectionContacto{
+#sectionContacto {
     background-color: #2D4059;
 }
 
@@ -195,7 +200,7 @@ body{
     /* Centrado en móviles */
     gap: 20px;
     /* Espacio grande controlado entre Facebook y WhatsApp */
-    color:antiquewhite;
+    color: antiquewhite;
 }
 
 #facebook,
@@ -218,23 +223,24 @@ body{
     gap: 15px;
     width: 100%;
     max-width: 400px;
-    color:white;
+    color: white;
     /* Evita que el formulario sea gigantesco en PC */
 }
 
 #inputCorreo {
     order: 1;
-    color:white;
-    
+    color: white;
+
 }
 
 #inputTelefono {
     order: 2;
-    color:white;
+    color: white;
 }
 
-#correoinput, #telefonoinput{
-    color:black
+#correoinput,
+#telefonoinput {
+    color: black
 }
 
 #comentario {
@@ -244,18 +250,20 @@ body{
 #comentariolabel {
     display: block;
     margin-bottom: 5px;
-    color:white;
+    color: white;
 }
 
-#telefono ,#correo{
-  color:white
+#telefono,
+#correo {
+    color: white
 }
+
 #comentarios {
     width: 100%;
     /* Se adapta al ancho del formulario */
     max-width: 300px;
     height: 150px;
-    color:black;
+    color: black;
     /* Reducido para celulares, crece en PC si es necesario */
 }
 
