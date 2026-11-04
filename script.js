@@ -4,19 +4,7 @@ function alternarAlerta(){
           alert("Gracias por contactarnos, en breve nos contactaremos contigo.");
 
           }
-// CATÁLOGO DE PRODUCTOS
-const productos = [
-    mod_rr2,
-    mod_zd6,
-    mod_skyL2,
-    mod_an6Sy,
-    mod_bon9,
-    mod_BES5,
-    mod_NYmarE,
-    mod_PegPlus2,
-    mod_sur5,
-    mod_OnCl3
-];
+
 
 // CARRITO
 let carrito = [];
@@ -52,6 +40,8 @@ function agregarAlCarrito(id) {
             precio: Number(producto.precio),
             cantidad: 1
         });
+
+        console.log(carrito)
     }
 
     actualizarCarrito();
@@ -156,7 +146,7 @@ function actualizarCarrito() {
     );
 
     contador.textContent = cantidadTotal;
-
+    console.log(cantidadTotal)
     mostrarCarrito();
 
     const subtotal = calcularSubtotal();
