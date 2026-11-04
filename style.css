@@ -6,6 +6,10 @@
     background: linear-gradient(45deg, #2D4059 40%, #EA5455);
 }
 
+#inicioSesionbtn, #carritobtn{
+color:white
+}
+
 .title{
     color: #EA5455;
     font-size: 3rem;
