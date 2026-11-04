@@ -17,188 +17,300 @@
 <body>
     <!--Nav Bar-->
     <header>
- <!--Contenedor responsivo-->
-<nav class="navbar navbar-expand-lg navbar-dark navbar-hakashoes">
-    <div class="container">
+        <!--Contenedor responsivo-->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-hakashoes">
+            <div class="container">
 
-        <a class="navbar-brand fw-bold" href="#inicio">
-            HakaShoes
-        </a>
-<!--Boton del menu -->
-        <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuHaka"
-            aria-controls="menuHaka"
-            aria-expanded="false"
-            aria-label="Abrir menú">
+                <a class="navbar-brand fw-bold" href="#inicio">
+                    HakaShoes
+                </a>
+                <!--Boton del menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuHaka"
+                    aria-controls="menuHaka" aria-expanded="false" aria-label="Abrir menú">
 
-            <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
 
-        </button>
-
-        <div class="collapse navbar-collapse" id="menuHaka">
-
-            <!--Enlazar a secciones de navegacion-->
-            <ul class="navbar-nav ms-auto align-items-lg-center">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#inicio">Inicio</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#quienes-somos">Quiénes somos</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#productos">Productos</a>
-                </li>
-
-                <li class="nav-item">
-                   <!--Oros botones -->
-                    <button class="btn btn-login ms-lg-3"
-                        type="button"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalLogin">
-                        Iniciar sesión
-                    </button>
-                </li>
-
-                <li class="nav-item ms-lg-3">
-                    <button class="btn btn-carrito"
-                        type="button"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalCarrito">
-                        Carrito
-                        <span id="contadorCarrito" class="badge">
-                            0
-                        </span>
-                    </button>
-                </li>
-
-            </ul>
-
-        </div>
-    </div>
-</nav>
-
-<!-- ventanita de login -->
-
-<div class="modal fade" id="modalLogin" tabindex="-1">
-
-    <div class="modal-dialog modal-dialog-centered">
-
-        <div class="modal-content login-haka">
-
-            <div class="modal-header">
-
-                <h5 class="modal-title">
-                    Bienvenido a HakaShoes
-                </h5>
-
-                <button type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal">
                 </button>
 
+                <div class="collapse navbar-collapse" id="menuHaka">
+
+                    <!--Enlazar a secciones de navegacion-->
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quienes-somos">Quiénes somos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#productos">Productos</a>
+                        </li>
+                           <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <!--Oros botones -->
+                            <button class="btn btn-login ms-lg-3" type="button" data-bs-toggle="modal"
+                                data-bs-target="#modalLogin">
+                                Iniciar sesión
+                            </button>
+                        </li>
+
+                        <li class="nav-item ms-lg-3">
+                            <button class="btn btn-carrito" type="button" data-bs-toggle="modal"
+                                data-bs-target="#modalCarrito">
+                                Carrito
+                                <span id="contadorCarrito" class="badge">
+                                    0
+                                </span>
+                            </button>
+                        </li>
+
+                    </ul>
+
+                </div>
             </div>
+        </nav>
 
-            <div class="modal-body">
+        <!-- ventanita de login -->
 
-                <h6 class="text-center mb-3">
-                    Inicia sesión
-                </h6>
+        <div class="modal fade" id="modalLogin" tabindex="-1">
 
-                <form id="formLogin">
+            <div class="modal-dialog modal-dialog-centered">
 
-                    <div class="mb-3">
+                <div class="modal-content login-haka">
 
-                        <label for="correoLogin" class="form-label">
-                            Correo electrónico
-                        </label>
+                    <div class="modal-header">
 
-                        <input type="email"
-                            class="form-control"
-                            id="correoLogin"
-                            placeholder="ejemplo@correo.com"
-                            required>
+                        <h5 class="modal-title">
+                            Bienvenido a HakaShoes
+                        </h5>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        </button>
 
                     </div>
 
-                    <div class="mb-3">
+                    <div class="modal-body">
 
-                        <label for="passwordLogin" class="form-label">
-                            Contraseña
-                        </label>
+                        <h6 class="text-center mb-3">
+                            Inicia sesión
+                        </h6>
 
-                        <input type="password"
-                            class="form-control"
-                            id="passwordLogin"
-                            placeholder="Tu contraseña"
-                            required>
+                        <form id="formLogin">
+
+                            <div class="mb-3">
+
+                                <label for="correoLogin" class="form-label">
+                                    Correo electrónico
+                                </label>
+
+                                <input type="email" class="form-control" id="correoLogin"
+                                    placeholder="ejemplo@correo.com" required>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label for="passwordLogin" class="form-label">
+                                    Contraseña
+                                </label>
+
+                                <input type="password" class="form-control" id="passwordLogin"
+                                    placeholder="Tu contraseña" required>
+
+                            </div>
+
+                            <button type="submit" class="btn btn-login w-100">
+                                Iniciar sesión
+                            </button>
+
+                        </form>
+
+                        <hr>
+
+                        <button type="button" class="btn btn-outline-primary w-100" id="btnTelefono">
+                            Continuar con número telefónico
+                        </button>
+
+                        <div id="formTelefono" class="mt-3 d-none">
+
+                            <label for="telefonoLogin" class="form-label">
+                                Número telefónico
+                            </label>
+
+                            <input type="tel" class="form-control" id="telefonoLogin"
+                                placeholder="Tu número telefónico">
+
+
+                            <button type="button" class="btn btn-login w-100 mt-2" id="btnContinuarTelefono">
+                                Continuar
+                            </button>
+
+                        </div>
+
+                        <p class="text-center mt-3 mb-0">
+                            ¿No tienes cuenta?
+                            <a href="#" id="btnRegistro">Crear cuenta</a>
+                        </p>
+
+
+                        <div id="mensajeLogin" class="mt-3"></div>
 
                     </div>
-
-                    <button type="submit" class="btn btn-login w-100">
-                        Iniciar sesión
-                    </button>
-
-                </form>
-
-                <hr>
-
-                <button type="button"
-                    class="btn btn-outline-primary w-100"
-                    id="btnTelefono">
-                    Continuar con número telefónico
-                </button>
-
-                <div id="formTelefono" class="mt-3 d-none">
-
-                    <label for="telefonoLogin" class="form-label">
-                        Número telefónico
-                    </label>
-
-                    <input type="tel"
-                        class="form-control"
-                        id="telefonoLogin"
-                        placeholder="Tu número telefónico">
-
-                
-                    <button type="button"
-                        class="btn btn-login w-100 mt-2"
-                        id="btnContinuarTelefono">
-                        Continuar
-                    </button>
 
                 </div>
 
-                <p class="text-center mt-3 mb-0">
-                    ¿No tienes cuenta?
-                    <a href="#" id="btnRegistro">Crear cuenta</a>
-                </p>
-
-
-                <div id="mensajeLogin" class="mt-3"></div>
-
             </div>
 
         </div>
-
-    </div>
-
-</div>
 
     </header>
     <main>
         <!--inicio-->
-        <section>
+        <section id="inicio">
             <h2></h2>
         </section>
 
         <!--Productos-->
-        <section>
+        <section class="container py-5">
+            <h2 class="text-center mb-4">Nuestros productos</h2>
+            <div id="productos" class="row g-4 justify-content-center"></div>
+        </section>
 
+        <script>
+            const mod_rr2 = {
+                id: 1,
+                nombre: "Response Runner 2",
+                descripcion: "Corre ligero, mantén el ritmo.",
+                marca: "Adidas",
+                precio: 1499,
+                imagen: "https://www.innovasport.com/medias/1200Wx1200H-NEW-media-gallery-000000000000436481-01-20261020121212.jpg?context=bWFzdGVyfGltYWdlc3w5ODI4MXxpbWFnZS9qcGVnfGFHTTVMMmd6TWk4ek1ETXdOakEzTURVMk1EYzVPQzh4TWpBd1YzZ3hNakF3U0Y5T1JWZGZiV1ZrYVdGZloyRnNiR1Z5ZVY4d01EQXdNREF3TURBd01EQTBNelkwT0RGZk1ERmZNakF5TmpFd01qQXhNakV5TVRJdWFuQm58NzY4OTg0NTY1ZGNlYjBkNjA1NzU4Y2MyNTg4OWRkN2E4OTMxZmM1MzA4MjRmN2QwOTFhM2YxMGViM2RhNGI1YQ"
+            };
 
+            const mod_zd6 = {
+                id: 2,
+                nombre: "Zig Dynamica 6",
+                descripcion: "Energía, comodidad en movimiento.",
+                marca: "Reebok",
+                precio: 1199,
+                imagen: "https://www.innovasport.com/medias/1200Wx1200H-NEW-media-gallery-000000000000417986-01-20260326121212.jpg?context=bWFzdGVyfGltYWdlc3w2MDk2MXxpbWFnZS9qcGVnfGFEUXdMMmhrTWk4eU5qZzFOalUwTlRjeE5ESXdOaTh4TWpBd1YzZ3hNakF3U0Y5T1JWZGZiV1ZrYVdGZloyRnNiR1Z5ZVY4d01EQXdNREF3TURBd01EQTBNVGM1T0RaZk1ERmZNakF5TmpBek1qWXhNakV5TVRJdWFuQm58OWE2M2QzMTRhOWYwMWMyMWIwZDVkOTI0YjA5ZjA2OGFhNzZkMWIxNTEzNGFjMGEwMGQ2NDg5ZTNhYThkZmIxNg"
+            };
+
+            const mod_skyL2 = {
+                id: 3,
+                nombre: "Skyrocket Lite 2",
+                descripcion: "Potencia tus pasos.",
+                marca: "Puma",
+                precio: 1399,
+                imagen: "https://images.puma.com/image/upload/f_auto,q_auto,w_600,b_rgb:FAFAFA/global/311730/48/sv01/fnd/MEX/fmt/png"
+            };
+
+            const mod_an6Sy = {
+                id: 4,
+                nombre: "Novablast 6 Sydney",
+                descripcion: "Impacto positivo de inicio a fin.",
+                marca: "Asics",
+                precio: 3399,
+                imagen: "https://www.innovasport.com/medias/1200Wx1200H-NEW-media-gallery-000000000000436635-01-20260721121212.jpg?context=bWFzdGVyfGltYWdlc3wxMDYwMjV8aW1hZ2UvanBlZ3xhRFJsTDJobFlpOHlPVEkwTVRBd05qYzRORFUwTWk4eE1qQXdWM2d4TWpBd1NGOU9SVmRmYldWa2FXRmZaMkZzYkdWeWVWOHdNREF3TURBd01EQXdNREEwTXpZMk16VmZNREZmTWpBeU5qQTNNakV4TWpFeU1USXVhbkJufGNlMjY2OTA3ZTc2NTE4NDcwNDZhYzQxN2Y1ZGY0MGM5ZmE2Mjc1ODc5MjhiZGU0MTc5ZWFhOGJiYWVjMjczYTU"
+            };
+
+            const mod_bon9 = {
+                id: 5,
+                nombre: "Bondi 9",
+                descripcion: "Te impulsan hasta el final.",
+                marca: "Hoka",
+                precio: 4399,
+                imagen: "https://site-product.innovasport.com/img-test/1162012-BBLC/1162012-BBLC_1-1200x1200.jpg"
+            };
+
+            const mod_BES5 = {
+                id: 6,
+                nombre: "Boston Endorphin Speed 5",
+                descripcion: "Velocidad que se siente en cada paso.",
+                marca: "Saucony",
+                precio: 4799,
+                imagen: "https://www.innovasport.com/medias/1200Wx1200H-NEW-media-gallery-000000000000416932-01-20260406180910.jpg?context=bWFzdGVyfGltYWdlc3w2ODE4MXxpbWFnZS9qcGVnfGFERm1MMmd6TWk4eU56SXpOelkwTWpneU9UZzFOQzh4TWpBd1YzZ3hNakF3U0Y5T1JWZGZiV1ZrYVdGZloyRnNiR1Z5ZVY4d01EQXdNREF3TURBd01EQTBNVFk1TXpKZk1ERmZNakF5TmpBME1EWXhPREE1TVRBdWFuQm58Y2Y5YzY4NmE0Y2VlNmVlODhiZTM5N2Q1NDgzNzlmMmQzNzU4OTgzYzM0NjkyNWUzOGQzOTlkM2ZmYjc1MDRkNw"
+            };
+
+            const mod_NYmarE = {
+                id: 7,
+                nombre: "NYC Marathon Ellipse",
+                descripcion: "Pisada estable en distancias largas.",
+                marca: "New Balance",
+                precio: 3699,
+                imagen: "https://www.innovasport.com/medias/1200Wx1200H-NEW-media-gallery-000000000000443962-01-20260910083020.jpg?context=bWFzdGVyfGltYWdlc3w4NTc3NHxpbWFnZS9qcGVnfGFHUXhMMmhpWVM4eU9UZzBOVGsxT1RJME5UZzFOQzh4TWpBd1YzZ3hNakF3U0Y5T1JWZGZiV1ZrYVdGZloyRnNiR1Z5ZVY4d01EQXdNREF3TURBd01EQTBORE01TmpKZk1ERmZNakF5TmpBNU1UQXdPRE13TWpBdWFuQm58NjI1MDU4ZGQ5NmU5OTNlZTMxMzRjMGZiYjQ3NjE5YmE1MDhlYzNmMDQ5OTI4NmQyYzI2YWU1Y2RjMWYwNTliYw"
+            };
+
+            const mod_PegPlus2 = {
+                id: 8,
+                nombre: "Pegasus Plus 2",
+                descripcion: "Rompe tus propios récords.",
+                marca: "Nike",
+                precio: 3799,
+                imagen: "https://www.innovasport.com/medias/1200Wx1200H-NEW-media-gallery-000000000000421139-01-20261001121212.jpg?context=bWFzdGVyfGltYWdlc3w4MjEyMHxpbWFnZS9qcGVnfGFEUXdMMmc1T0M4ek1ERXlPVEE1T1RBME5qazBNaTh4TWpBd1YzZ3hNakF3U0Y5T1JWZGZiV1ZrYVdGZloyRnNiR1Z5ZVY4d01EQXdNREF3TURBd01EQTBNakV4TXpsZk1ERmZNakF5TmpFd01ERXhNakV5TVRJdWFuQm58OTY2MzExMmE1ZWE2ODFmYmZhYjBmNDI3NzE3OTFjNWVkNGM0YmIwMWFhMTNjM2IwY2FhYzFjMzIwZmZhMmY5NA"
+            };
+
+            const mod_sur5 = {
+                id: 9,
+                nombre: "Surge 5",
+                descripcion: "Ligereza y amortiguación que elevan.",
+                marca: "Under Armour",
+                precio: 1499,
+                imagen: "https://www.innovasport.com/medias/1200Wx1200H-NEW-media-gallery-000000000000412953-01-20260710171310.jpg?context=bWFzdGVyfGltYWdlc3w2ODQ1NHxpbWFnZS9qcGVnfGFEZGpMMmcyWkM4eU9UQXhNRGsyTlRZeU5qa3hNQzh4TWpBd1YzZ3hNakF3U0Y5T1JWZGZiV1ZrYVdGZloyRnNiR1Z5ZVY4d01EQXdNREF3TURBd01EQTBNVEk1TlROZk1ERmZNakF5TmpBM01UQXhOekV6TVRBdWFuQm58MTBiZjhjOGQxYjBiNzlmYTM5NDExMDdjOTU2NzEzNjNkNDYwNjIyNmUzOTc5MDkyNjZhMDg5MDBmODkyNzg0Mg"
+            };
+
+            const mod_OnCl3 = {
+                id: 10,
+                nombre: "Cloudrunner 3 Max",
+                descripcion: "Cada kilómetro es una oportunidad.",
+                marca: "On",
+                precio: 3500,
+                imagen: "https://www.innovasport.com/medias/1200Wx1200H-NEW-media-gallery-000000000000443794-01-20260923121212.jpg?context=bWFzdGVyfGltYWdlc3w2NTE5NXxpbWFnZS9qcGVnfGFHUmhMMmhrTmk4ek1EQXhOVFUwTmpreE5qZzVOQzh4TWpBd1YzZ3hNakF3U0Y5T1JWZGZiV1ZrYVdGZloyRnNiR1Z5ZVY4d01EQXdNREF3TURBd01EQTBORE0zT1RSZk1ERmZNakF5TmpBNU1qTXhNakV5TVRJdWFuQm58YTI4ZTEzN2Q5ZmI5ZWEzMzFkOGE1ZTQ5OWJhNDBhMWU1Y2VlZTUxZDBhOTAwN2Q1NDM4MTgyMmUwNzI1OWIyNg"
+            };
+
+            // Lista de productos
+            const productos = [
+                mod_rr2,
+                mod_zd6,
+                mod_skyL2,
+                mod_an6Sy,
+                mod_bon9,
+                mod_BES5,
+                mod_NYmarE,
+                mod_PegPlus2,
+                mod_sur5,
+                mod_OnCl3
+            ];
+
+            const contenedor = document.getElementById("productos");
+
+            productos.forEach(p => {
+                const precio = p.precio.toLocaleString("es-MX", {
+                    style: "currency",
+                    currency: "MXN"
+                });
+
+                contenedor.insertAdjacentHTML("beforeend", `
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card h-100 shadow-sm">
+            <img src="${p.imagen}" class="card-img-top" alt="${p.nombre}">
+            <div class="card-body d-flex flex-column">
+              <span class="badge text-bg-dark align-self-start mb-2">${p.marca}</span>
+              <h5 class="card-title">${p.nombre}</h5>
+              <p class="card-text text-muted">${p.descripcion}</p>
+              <p class="fs-4 fw-bold mt-auto mb-3">${precio}</p>
+              <a href="#" class="btn btn-primary w-100">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+      `);
+            });
+        </script>
         </section>
 
         <!--Quienes somos-->
@@ -298,7 +410,7 @@
                     </div>
                     <button onclick="alternarAlerta()" id="enviar">Enviar</button>
                 </form>
-             
+
             </div>
         </section>
     </main>
@@ -340,47 +452,46 @@
             </div>
         </div>
     </footer>
-<!-- CARRITO - AXEL -->
-<div class="modal fade" id="modalCarrito" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
+    <!-- CARRITO - AXEL -->
+    <div class="modal fade" id="modalCarrito" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
 
-            <div class="modal-header">
-                <h5 class="modal-title">Mi carrito</h5>
-                <button type="button" class="btn-close"
-                    data-bs-dismiss="modal"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title">Mi carrito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div id="listaCarrito"></div>
+
+                    <hr>
+
+                    <p>Subtotal: $<span id="subtotalCarrito">0</span></p>
+                    <p>Envío: $<span id="envioCarrito">199</span></p>
+                    <h5>Total: $<span id="totalCarrito">199</span></h5>
+
+                    <div id="mensajePromocion"></div>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-danger" id="vaciarCarrito">
+                        Vaciar carrito
+                    </button>
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
+                </div>
+
             </div>
-
-            <div class="modal-body">
-                <div id="listaCarrito"></div>
-
-                <hr>
-
-                <p>Subtotal: $<span id="subtotalCarrito">0</span></p>
-                <p>Envío: $<span id="envioCarrito">199</span></p>
-                <h5>Total: $<span id="totalCarrito">199</span></h5>
-
-                <div id="mensajePromocion"></div>
-            </div>
-
-            <div class="modal-footer">
-                <button class="btn btn-danger" id="vaciarCarrito">
-                    Vaciar carrito
-                </button>
-                <button class="btn btn-secondary"
-                    data-bs-dismiss="modal">Seguir comprando</button>
-            </div>
-
         </div>
-    </div>
 
-    <!--Script funcionalidad extra -->
-    <script src="script.js"></script>
+        <!--Script funcionalidad extra -->
+        <script src="script.js"></script>
 
-    <!--Script Boostrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        <!--Script Boostrap JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
