@@ -50,6 +50,7 @@
     animation: flotar 3s ease-in-out infinite;
 }
 
+/* Tablet */
 @keyframes flotar {
     0% {
         transform: translateY(0);
@@ -64,6 +65,7 @@
     }
 }
 
+/* Móvil */
 @media (max-width: 768px) {
     .index {
         height: auto;
